@@ -1,0 +1,17 @@
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\bin\Debug\netcoreapp3.1\DAL.Implementation.deps.json
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\bin\Debug\netcoreapp3.1\DAL.Implementation.runtimeconfig.json
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\bin\Debug\netcoreapp3.1\DAL.Implementation.runtimeconfig.dev.json
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\bin\Debug\netcoreapp3.1\DAL.Implementation.dll
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\bin\Debug\netcoreapp3.1\DAL.Implementation.pdb
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\bin\Debug\netcoreapp3.1\DAL.Abstraction.dll
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\bin\Debug\netcoreapp3.1\DAL.Abstraction.pdb
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\obj\Debug\netcoreapp3.1\DAL.Implementation.csprojAssemblyReference.cache
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\obj\Debug\netcoreapp3.1\DAL.Implementation.AssemblyInfoInputs.cache
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\obj\Debug\netcoreapp3.1\DAL.Implementation.AssemblyInfo.cs
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\obj\Debug\netcoreapp3.1\DAL.Implementation.csproj.CoreCompileInputs.cache
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\obj\Debug\netcoreapp3.1\DAL.Implementation.csproj.CopyComplete
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\obj\Debug\netcoreapp3.1\DAL.Implementation.dll
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\obj\Debug\netcoreapp3.1\DAL.Implementation.pdb
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Implementation\obj\Debug\netcoreapp3.1\DAL.Implementation.genruntimeconfig.cache

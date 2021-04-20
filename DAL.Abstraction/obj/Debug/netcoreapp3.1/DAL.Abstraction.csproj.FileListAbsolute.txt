@@ -1,0 +1,15 @@
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\bin\Debug\netcoreapp3.1\DAL.Abstraction.deps.json
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\bin\Debug\netcoreapp3.1\DAL.Abstraction.runtimeconfig.json
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\bin\Debug\netcoreapp3.1\DAL.Abstraction.runtimeconfig.dev.json
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\bin\Debug\netcoreapp3.1\DAL.Abstraction.dll
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\bin\Debug\netcoreapp3.1\DAL.Abstraction.pdb
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\obj\Debug\netcoreapp3.1\DAL.Abstraction.csprojAssemblyReference.cache
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\obj\Debug\netcoreapp3.1\DAL.Abstraction.AssemblyInfoInputs.cache
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\obj\Debug\netcoreapp3.1\DAL.Abstraction.AssemblyInfo.cs
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\obj\Debug\netcoreapp3.1\DAL.Abstraction.csproj.CoreCompileInputs.cache
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\obj\Debug\netcoreapp3.1\DAL.Abstraction.csproj.CopyComplete
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\obj\Debug\netcoreapp3.1\DAL.Abstraction.dll
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\obj\Debug\netcoreapp3.1\DAL.Abstraction.pdb
+C:\Users\Maryna\RiderProjects\Restaurant\DAL.Abstraction\obj\Debug\netcoreapp3.1\DAL.Abstraction.genruntimeconfig.cache

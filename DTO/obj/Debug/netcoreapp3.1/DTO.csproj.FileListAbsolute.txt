@@ -1,0 +1,12 @@
+C:\Users\Maryna\RiderProjects\Restaurant\DTO\bin\Debug\netcoreapp3.1\DTO.deps.json
+C:\Users\Maryna\RiderProjects\Restaurant\DTO\bin\Debug\netcoreapp3.1\DTO.runtimeconfig.json
+C:\Users\Maryna\RiderProjects\Restaurant\DTO\bin\Debug\netcoreapp3.1\DTO.runtimeconfig.dev.json
+C:\Users\Maryna\RiderProjects\Restaurant\DTO\bin\Debug\netcoreapp3.1\DTO.dll
+C:\Users\Maryna\RiderProjects\Restaurant\DTO\bin\Debug\netcoreapp3.1\DTO.pdb
+C:\Users\Maryna\RiderProjects\Restaurant\DTO\obj\Debug\netcoreapp3.1\DTO.csprojAssemblyReference.cache
+C:\Users\Maryna\RiderProjects\Restaurant\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfoInputs.cache
+C:\Users\Maryna\RiderProjects\Restaurant\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfo.cs
+C:\Users\Maryna\RiderProjects\Restaurant\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Maryna\RiderProjects\Restaurant\DTO\obj\Debug\netcoreapp3.1\DTO.dll
+C:\Users\Maryna\RiderProjects\Restaurant\DTO\obj\Debug\netcoreapp3.1\DTO.pdb
+C:\Users\Maryna\RiderProjects\Restaurant\DTO\obj\Debug\netcoreapp3.1\DTO.genruntimeconfig.cache

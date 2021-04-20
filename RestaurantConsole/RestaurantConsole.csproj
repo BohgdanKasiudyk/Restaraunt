@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BLL.Abstraction\BLL.Abstraction.csproj" />
+      <ProjectReference Include="..\BLL.Implementation\BLL.Implementation.csproj" />
+      <ProjectReference Include="..\DAL.Implementation\DAL.Implementation.csproj" />
+      <ProjectReference Include="..\DTO\DTO.csproj" />
+      <ProjectReference Include="..\Entities\Entities.csproj" />
+    </ItemGroup>
+
+</Project>
