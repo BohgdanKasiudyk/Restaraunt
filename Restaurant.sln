@@ -12,8 +12,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL.Abstraction", "BLL.Abst
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL.Implementation", "BLL.Implementation\BLL.Implementation.csproj", "{0A56B318-9A64-4C72-8D30-FCFD965EFD71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantConsole", "RestaurantConsole\RestaurantConsole.csproj", "{72011F32-2F2E-4BAB-A95A-44BC8A5C9B84}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{6F9AD3EB-D418-4CFE-9343-9B9D992ED4A2}"
 EndProject
 Global
@@ -46,10 +44,6 @@ Global
 		{0A56B318-9A64-4C72-8D30-FCFD965EFD71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A56B318-9A64-4C72-8D30-FCFD965EFD71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A56B318-9A64-4C72-8D30-FCFD965EFD71}.Release|Any CPU.Build.0 = Release|Any CPU
-		{72011F32-2F2E-4BAB-A95A-44BC8A5C9B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72011F32-2F2E-4BAB-A95A-44BC8A5C9B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72011F32-2F2E-4BAB-A95A-44BC8A5C9B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72011F32-2F2E-4BAB-A95A-44BC8A5C9B84}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6F9AD3EB-D418-4CFE-9343-9B9D992ED4A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6F9AD3EB-D418-4CFE-9343-9B9D992ED4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F9AD3EB-D418-4CFE-9343-9B9D992ED4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
