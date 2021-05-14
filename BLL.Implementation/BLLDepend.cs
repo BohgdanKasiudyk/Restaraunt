@@ -8,9 +8,9 @@ namespace BLL.Implementation
     {
         public static IServiceCollection RegisterServiceCollectionBLL(this IServiceCollection services)
         {
-            services.AddTransient<ICookService, CookService>();
-            services.AddTransient<IDishService, DishService>();
-            services.AddTransient<IOrderService, OrderService>();
+            services.AddSingleton<ICookService, CookService>();
+            services.AddSingleton<IDishService, DishService>();
+            services.AddSingleton<IOrderService, OrderService>();
 
             return services;
         }
