@@ -19,15 +19,15 @@ namespace Console
 
         private void Configure(IServiceCollection serviceCollection)
         {
-            
+            serviceCollection.RegisterServiceCollectionCON();
             serviceCollection.RegisterServiceCollectionDAL();
             serviceCollection.RegisterServiceCollectionBLL();
         }
 
         public void Run()
         {
-            ICMD console = new CMD(_serviceProvider.GetRequiredService<IDishService>(),
-                _serviceProvider.GetRequiredService<IOrderService>());
+            ICMD console = _serviceProvider.GetRequiredService<ICMD>();
+                
             console.Show();
         }
     }
