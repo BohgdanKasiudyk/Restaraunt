@@ -7,6 +7,10 @@ namespace DAL.Abstraction.UnitOfWork
         ICookRepository Cooks {get; }
         IDishRepository Dishes { get;  }
         IOrderRepository Orders { get; }
+        
+        IMenuRepository Menus { get; }
+        
+        IDishMenuRepository DishMenus { get;  }
 
         void Save();
     }

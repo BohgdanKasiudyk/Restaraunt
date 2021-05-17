@@ -16,6 +16,8 @@ namespace DAL.Implementation
             serviceCollection.AddScoped<IOrderRepository, OrderRepository>();
             serviceCollection.AddScoped<ICookRepository, CookRepository>();
             serviceCollection.AddScoped<IDishRepository, DishRepository>();
+            serviceCollection.AddScoped<IMenuRepository, MenuRepository>();
+            serviceCollection.AddScoped<IDishMenuRepository, DishMenuRepository>();
             serviceCollection.AddScoped<IUnitOfWork, UnitOfWork.UnitOfWork>();
            return serviceCollection;
         }

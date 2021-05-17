@@ -43,7 +43,29 @@ namespace DAL.Implementation.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("SpecializationId");
+
                     b.ToTable("Cooks");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Efficiency = 0.0,
+                            Name = "Jo",
+                            SpecializationId = 1,
+                            Surname = "Cook",
+                            WhenIsFree = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Efficiency = 2.0,
+                            Name = "Cook",
+                            SpecializationId = 2,
+                            Surname = "Cook",
+                            WhenIsFree = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("Entities.Dish", b =>
@@ -73,6 +95,26 @@ namespace DAL.Implementation.Migrations
                     b.HasIndex("SpecializationId");
 
                     b.ToTable("Dishes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CookingTime = new TimeSpan(0, 0, 20, 0, 0),
+                            Name = "Salad",
+                            Price = 100,
+                            SpecializationId = 1,
+                            Weight = 3.0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CookingTime = new TimeSpan(0, 0, 20, 0, 0),
+                            Name = "Meat",
+                            Price = 100,
+                            SpecializationId = 2,
+                            Weight = 3.0
+                        });
                 });
 
             modelBuilder.Entity("Entities.DishIngredient", b =>
@@ -95,6 +137,56 @@ namespace DAL.Implementation.Migrations
                     b.HasIndex("IngredientId");
 
                     b.ToTable("DishIngredients");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DishId = 1,
+                            IngredientId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DishId = 2,
+                            IngredientId = 2
+                        });
+                });
+
+            modelBuilder.Entity("Entities.DishMenu", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("DishId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MenuId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DishId");
+
+                    b.HasIndex("MenuId");
+
+                    b.ToTable("DishMenus");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DishId = 1,
+                            MenuId = 0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DishId = 2,
+                            MenuId = 0
+                        });
                 });
 
             modelBuilder.Entity("Entities.DishOrder", b =>
@@ -140,6 +232,40 @@ namespace DAL.Implementation.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Ingredients");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Salad"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Meat"
+                        });
+                });
+
+            modelBuilder.Entity("Entities.Menu", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Menus");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "main"
+                        });
                 });
 
             modelBuilder.Entity("Entities.Order", b =>
@@ -173,6 +299,29 @@ namespace DAL.Implementation.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Specializations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Salad"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Meat"
+                        });
+                });
+
+            modelBuilder.Entity("Entities.Cook", b =>
+                {
+                    b.HasOne("Entities.Specialization", "Specialization")
+                        .WithMany()
+                        .HasForeignKey("SpecializationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Specialization");
                 });
 
             modelBuilder.Entity("Entities.Dish", b =>
@@ -205,6 +354,25 @@ namespace DAL.Implementation.Migrations
                     b.Navigation("Ingredient");
                 });
 
+            modelBuilder.Entity("Entities.DishMenu", b =>
+                {
+                    b.HasOne("Entities.Dish", "Dish")
+                        .WithMany()
+                        .HasForeignKey("DishId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entities.Menu", "Menu")
+                        .WithMany("DishMenus")
+                        .HasForeignKey("MenuId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Dish");
+
+                    b.Navigation("Menu");
+                });
+
             modelBuilder.Entity("Entities.DishOrder", b =>
                 {
                     b.HasOne("Entities.Cook", "Cook")
@@ -235,6 +403,11 @@ namespace DAL.Implementation.Migrations
             modelBuilder.Entity("Entities.Dish", b =>
                 {
                     b.Navigation("DishIngredients");
+                });
+
+            modelBuilder.Entity("Entities.Menu", b =>
+                {
+                    b.Navigation("DishMenus");
                 });
 
             modelBuilder.Entity("Entities.Order", b =>

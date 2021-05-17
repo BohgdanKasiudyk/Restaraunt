@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,8 @@ namespace DAL.Implementation.EnFr
         public DbSet<Ingredient> Ingredients { get; set; }
         public DbSet<Specialization> Specializations { get; set; }
         public DbSet<DishOrder> DishOrders { get; set; }
+        public DbSet<Menu> Menus { get; set; }
+        public DbSet<DishMenu> DishMenus { get; set; }
 
         
 
@@ -20,11 +23,18 @@ namespace DAL.Implementation.EnFr
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"database = RestaurantDb; Integrated Security=true;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database = RestaurantDb;Integrated Security=true;");
         }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Menu>().HasData(
+                new Menu[]
+                {
+                    new Menu{ Id = 1, Name = "main"}
+
+                }
+            );
             modelBuilder.Entity<Specialization>().HasData(
                 new Specialization[]
                 {
@@ -89,6 +99,15 @@ namespace DAL.Implementation.EnFr
                         Id=2,IngredientId = 2, DishId = 2
                     }
                 }
+            );
+
+            modelBuilder.Entity<DishMenu>().HasData(
+                new DishMenu[]
+                {
+                    new DishMenu {Id = 1, DishId = 1, MenuId = 1},
+                    new DishMenu {Id = 2, DishId = 2, MenuId =  1}
+                }
+
             );
 
         }

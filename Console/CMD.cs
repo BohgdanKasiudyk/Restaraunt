@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System;
+using System.Collections;
 using BLL.Abstraction;
-
+using DAL.Abstraction.Repositories;
 using DTO;
+using Entities;
 
 namespace Console
 {
@@ -11,15 +13,19 @@ namespace Console
     {
         private readonly IDishService _dishService;
         private readonly IOrderService _orderService;
+        private readonly IMenuService _menuService;
         private ICollection<DishDTO> disheDtos;
         private ICollection<DishDTO> selectedDishes;
+        private ICollection<Menu> Menus;
 
-        public CMD(IDishService dishService, IOrderService orderService)
+        public CMD(IDishService dishService, IOrderService orderService , IMenuService menuService)
         {
+            _menuService = menuService;
             _dishService = dishService;
             _orderService = orderService;
-            disheDtos = _dishService.GetAllDishes().ToList();
+            disheDtos = new List<DishDTO>();
             selectedDishes = new List<DishDTO>();
+            Menus = _menuService.GetALLMenus().ToList();
         }
 
 
@@ -29,6 +35,7 @@ namespace Console
             bool work = true;
             int number;
             int dishId;
+            int menuId = new int(); 
             OrderDTO orderDto = new OrderDTO();
             
             while (work)
@@ -37,19 +44,27 @@ namespace Console
                 
                 switch (number)
                 {
-                    case 1: ShowMenu(disheDtos);
+                    case 1: ShowMenus();
                         break;
-                    case 2: dishId = GetDishId();
-                        AddDish(disheDtos.Where(d => d.Id == dishId).First());
+                    case 2: 
+                        menuId = GetMenuId();
+                        disheDtos = _menuService.GetAllDishesFromMenu(menuId).ToList();
                         break;
                     case 3:
+                        //disheDtos = _menuService.GetAllDishesFromMenu(menuId).ToList();
+                        ShowMenu(disheDtos);
+                        break;
+                    case 4: dishId = GetDishId();
+                        AddDish(disheDtos.Where(d => d.Id == dishId).First());
+                        break;
+                    case 5:
                         orderDto = CreateOrder();
                         break;
-                    case 4:
+                    case 6:
                         ShowOrder(orderDto);
                         break;
                         
-                    case 5:
+                    case 7:
                         work = false;
                         break;
 
@@ -62,11 +77,13 @@ namespace Console
         private void ShowInstruction()
         {
             System.Console.WriteLine("Choose");
-            System.Console.WriteLine("1. Get menu");
-            System.Console.WriteLine("2. Add to order");
-            System.Console.WriteLine("3. Create Order");
-            System.Console.WriteLine("4. Show your order");
-            System.Console.WriteLine("5. Exit");
+            System.Console.WriteLine("1. Show menus");
+            System.Console.WriteLine("2. Select menu");
+            System.Console.WriteLine("3. Get menu");
+            System.Console.WriteLine("4. Add to order");
+            System.Console.WriteLine("5. Create Order");
+            System.Console.WriteLine("6. Show your order");
+            System.Console.WriteLine("7. Exit");
         }
         
         
@@ -76,6 +93,8 @@ namespace Console
             return System.Convert.ToInt32(System.Console.ReadLine());
 
         }
+        
+        //private int Get
 
         private int GetConsoleNumber()
         {
@@ -117,6 +136,22 @@ namespace Console
             selectedDishes.Clear();
             return orderDto;
         }
-        
+
+        private void ShowMenus()
+        {
+            System.Console.WriteLine("Id , Name" );
+            foreach (Menu menu in Menus)
+            {
+                System.Console.WriteLine(menu.Id + " " + menu.Name);
+            }
+        }
+
+        private int GetMenuId()
+        {
+            System.Console.Write("Input menu Id: ");
+            return System.Convert.ToInt32(System.Console.ReadLine());
+            
+        }
+
     }
 }

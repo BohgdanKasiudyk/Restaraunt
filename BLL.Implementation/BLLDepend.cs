@@ -11,6 +11,8 @@ namespace BLL.Implementation
             services.AddSingleton<ICookService, CookService>();
             services.AddSingleton<IDishService, DishService>();
             services.AddSingleton<IOrderService, OrderService>();
+            services.AddSingleton<IMenuService, MenuService>(); 
+            
 
             return services;
         }

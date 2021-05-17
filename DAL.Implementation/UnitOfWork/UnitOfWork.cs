@@ -10,14 +10,21 @@ namespace DAL.Implementation.UnitOfWork
         public ICookRepository Cooks { get;  }
         public IDishRepository Dishes { get; }
         public IOrderRepository Orders { get;  }
+        
+        public IMenuRepository Menus { get;  }
+        
+        public IDishMenuRepository DishMenus { get;  }
 
         public UnitOfWork(RestaurantDbContext _dbContext, IDishRepository dishRepository,
-            ICookRepository cookRepository, IOrderRepository orderRepository)
+            ICookRepository cookRepository, IOrderRepository orderRepository,
+            IMenuRepository menuRepository, IDishMenuRepository dishMenusRepository)
         {
             this._dbContext = _dbContext;
             Cooks = cookRepository;
             Dishes = dishRepository;
             Orders = orderRepository;
+            Menus = menuRepository;
+            DishMenus = dishMenusRepository;
         }
 
         public void Save()
