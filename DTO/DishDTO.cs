@@ -12,6 +12,8 @@ namespace DTO
         public TimeSpan CookingTime { get; set; } 
         public IEnumerable<IngredientDTO> IngredientDTOs { get; set; }
         public SpecializationDTO Specialization { get; set; }
+        
+        
 
         public DishDTO()
         {

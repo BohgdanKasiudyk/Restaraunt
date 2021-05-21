@@ -23,30 +23,33 @@ namespace DAL.Implementation.EnFr
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database = RestaurantDb;Integrated Security=true;");
+            optionsBuilder
+                .UseLazyLoadingProxies()
+                .UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database = RestaurantDb;Integrated Security=true;");
         }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            
             modelBuilder.Entity<Menu>().HasData(
                 new Menu[]
                 {
-                    new Menu{ Id = 1, Name = "main"}
+                    new Menu {Id = 1, Name = "main"}
 
                 }
             );
             modelBuilder.Entity<Specialization>().HasData(
                 new Specialization[]
                 {
-                    new Specialization { Id= 1, Name = "Salad"},
-                    new Specialization {  Id =2,Name = "Meat"}
+                    new Specialization {Id = 1, Name = "Salad"}, 
+                    new Specialization {Id = 2, Name = "Meat"}
                 }
             );
             modelBuilder.Entity<Cook>().HasData(
                 new Cook[]
                 {
-                    new Cook {  Id = 1 , Name = "Jo", Surname = "Cook", SpecializationId = 1, Efficiency = 0},
-                    new Cook { Id = 2,Name = "Cook", Surname = "Cook", Efficiency = 2, SpecializationId = 2}
+                     new Cook {Id = 1, Name = "Jo", Surname = "Cook", SpecializationId = 1, Efficiency = 0},
+                     new Cook {Id = 2, Name = "Cook", Surname = "Cook", Efficiency = 2, SpecializationId = 2}
                 }
             );
 

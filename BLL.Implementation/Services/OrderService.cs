@@ -47,7 +47,7 @@ namespace BLL.Implementation.Services
                 order.DishOrders.Add(dishOrder);
             }
 
-            DishOrder first = order.DishOrders.OrderBy(d => d.CookingTime).First();
+            DishOrder first = order.DishOrders.OrderBy(d => d.CookingTime).Last();
 
             order.CookingTime = first.CookingTime ;
             

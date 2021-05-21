@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using DAL.Abstraction.Repositories;
 using DAL.Implementation.EnFr;
 using Entities;
@@ -12,6 +14,10 @@ namespace DAL.Implementation.Repositories
         {
             
         }
-        
+
+        public IEnumerable<DishMenu> selectDishMenusByMenuId(int menuId)
+        {
+            return _dbSet.Where(i => i.MenuId == menuId).ToList();
+        }
     }
 }

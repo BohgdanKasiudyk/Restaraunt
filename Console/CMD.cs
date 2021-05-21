@@ -16,7 +16,7 @@ namespace Console
         private readonly IMenuService _menuService;
         private ICollection<DishDTO> disheDtos;
         private ICollection<DishDTO> selectedDishes;
-        private ICollection<Menu> Menus;
+        private ICollection<MenuDTO> Menus;
 
         public CMD(IDishService dishService, IOrderService orderService , IMenuService menuService)
         {
@@ -140,7 +140,7 @@ namespace Console
         private void ShowMenus()
         {
             System.Console.WriteLine("Id , Name" );
-            foreach (Menu menu in Menus)
+            foreach (MenuDTO menu in Menus)
             {
                 System.Console.WriteLine(menu.Id + " " + menu.Name);
             }

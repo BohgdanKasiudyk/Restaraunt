@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BLL.Abstraction\BLL.Abstraction.csproj" />
+      <ProjectReference Include="..\BLL.Implementation\BLL.Implementation.csproj" />
+      <ProjectReference Include="..\DAL.Abstraction\DAL.Abstraction.csproj" />
+      <ProjectReference Include="..\DAL.Implementation\DAL.Implementation.csproj" />
+      <ProjectReference Include="..\DTO\DTO.csproj" />
+    </ItemGroup>
+
+</Project>

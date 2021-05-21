@@ -27,9 +27,10 @@ namespace BLL.Implementation.Mappers
                 Id = dish.Id,
                 Price = dish.Price,
                 CookingTime = dish.CookingTime,
-                //IngredientDTOs = dish.DishIngredients.Select(di => di.Ingredient.ToDTO()).ToList(),
+                IngredientDTOs = dish.DishIngredients.Select(di => di.Ingredient.ToDTO()).ToList(),
                 Weight = dish.Weight,
-                //Specialization = dish.Specialization.ToDto()
+                
+                Specialization = dish.Specialization.ToDto()
             };
         }
     }

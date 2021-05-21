@@ -19,8 +19,7 @@ namespace BLL.Implementation.Services
         public Cook GetReadyCook(DateTime startOrder, int specializationId)
         {
             IEnumerable<Cook> cooks = _unitOfWork.Cooks.GetAll();
-            IEnumerable<Cook> freeCooks =
-                cooks.Where(c => startOrder > c.WhenIsFree).Where(c => c.SpecializationId == specializationId).ToList();
+            IEnumerable<Cook> freeCooks = _unitOfWork.Cooks.getFreeCooks(startOrder, specializationId);
 
             if (freeCooks.Count() == 0)
             {

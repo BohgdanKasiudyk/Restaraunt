@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL.Implementation", "BLL.I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{6F9AD3EB-D418-4CFE-9343-9B9D992ED4A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{89E8D569-F14D-444D-B22C-8B4DE5D3A917}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{6F9AD3EB-D418-4CFE-9343-9B9D992ED4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F9AD3EB-D418-4CFE-9343-9B9D992ED4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F9AD3EB-D418-4CFE-9343-9B9D992ED4A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89E8D569-F14D-444D-B22C-8B4DE5D3A917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89E8D569-F14D-444D-B22C-8B4DE5D3A917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89E8D569-F14D-444D-B22C-8B4DE5D3A917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89E8D569-F14D-444D-B22C-8B4DE5D3A917}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

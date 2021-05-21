@@ -19,14 +19,14 @@ namespace BLL.Implementation.Services
         {
             this._unitOfWork = unitOfWork;
         }
-        public IEnumerable<Menu> GetALLMenus()
+        public IEnumerable<MenuDTO> GetALLMenus()
         {
-            return _unitOfWork.Menus.GetAll();
+            return _unitOfWork.Menus.GetAll().Select(m => m.toDTO());
         }
 
         public IEnumerable<DishDTO> GetAllDishesFromMenu(int menuId)
         {
-            IEnumerable<DishMenu> dishMenus = _unitOfWork.DishMenus.GetAll().Where(i => i.MenuId == menuId).ToList();
+            IEnumerable<DishMenu> dishMenus = _unitOfWork.DishMenus.selectDishMenusByMenuId(menuId);
             List<DishDTO> dishDtos = new List<DishDTO>();
             foreach (var dishmenu in dishMenus)
             {

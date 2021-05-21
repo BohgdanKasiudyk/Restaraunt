@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vnwcT1gyy5tbnPnCW2oi4UiOT8wj4zlMaspKt3B1W6iooHFx+T/+nLkO2lLEzRdY4YgdOJXThmVRrHEx0gMTdQ==",
+  "dgSpecHash": "JhgZe4EiGkHPVhGG+MXsViQ3gI2YUlTzqgan2Zf2cCilB2S2TxDw2q3+ml0LGRL1H1ujD0eF0FTKmmdLtw+YlQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Maryna\\RiderProjects\\Restaurant\\DAL.Implementation\\DAL.Implementation.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Maryna\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Maryna\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Maryna\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Maryna\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
@@ -12,6 +13,7 @@
     "C:\\Users\\Maryna\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.5\\microsoft.entityframeworkcore.abstractions.5.0.5.nupkg.sha512",
     "C:\\Users\\Maryna\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.5\\microsoft.entityframeworkcore.analyzers.5.0.5.nupkg.sha512",
     "C:\\Users\\Maryna\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.5\\microsoft.entityframeworkcore.design.5.0.5.nupkg.sha512",
+    "C:\\Users\\Maryna\\.nuget\\packages\\microsoft.entityframeworkcore.proxies\\5.0.5\\microsoft.entityframeworkcore.proxies.5.0.5.nupkg.sha512",
     "C:\\Users\\Maryna\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.5\\microsoft.entityframeworkcore.relational.5.0.5.nupkg.sha512",
     "C:\\Users\\Maryna\\.nuget\\packages\\microsoft.entityframeworkcore.relational.design\\1.1.6\\microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512",
     "C:\\Users\\Maryna\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.5\\microsoft.entityframeworkcore.sqlserver.5.0.5.nupkg.sha512",
@@ -56,6 +58,7 @@
     "C:\\Users\\Maryna\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\Maryna\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\Maryna\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
+    "C:\\Users\\Maryna\\.nuget\\packages\\system.diagnostics.tracesource\\4.3.0\\system.diagnostics.tracesource.4.3.0.nupkg.sha512",
     "C:\\Users\\Maryna\\.nuget\\packages\\system.diagnostics.tracing\\4.3.0\\system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "C:\\Users\\Maryna\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\Maryna\\.nuget\\packages\\system.dynamic.runtime\\4.3.0\\system.dynamic.runtime.4.3.0.nupkg.sha512",

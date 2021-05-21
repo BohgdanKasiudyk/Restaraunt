@@ -27,7 +27,7 @@ namespace BLL.Implementation.Mappers
                 Surname = cook.Surname,
                 Efficiency = cook.Efficiency,
                 Id = cook.Id,
-               SpecializationDto = cook.Specialization.ToDto(),
+                SpecializationDto = cook.Specialization.ToDto(),
                 WhenIsFree = cook.WhenIsFree
             };
         }

@@ -75,3 +75,5 @@ C:\Users\Maryna\RiderProjects\Restaurant\Console\obj\Debug\netcoreapp3.1\Console
 C:\Users\Maryna\RiderProjects\Restaurant\Console\obj\Debug\netcoreapp3.1\Console.dll
 C:\Users\Maryna\RiderProjects\Restaurant\Console\obj\Debug\netcoreapp3.1\Console.pdb
 C:\Users\Maryna\RiderProjects\Restaurant\Console\obj\Debug\netcoreapp3.1\Console.genruntimeconfig.cache
+C:\Users\Maryna\RiderProjects\Restaurant\Console\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\Maryna\RiderProjects\Restaurant\Console\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll

@@ -7,7 +7,7 @@ namespace BLL.Abstraction
 {
     public interface IMenuService
     {
-        IEnumerable<Menu> GetALLMenus();
+        IEnumerable<MenuDTO> GetALLMenus();
         IEnumerable<DishDTO> GetAllDishesFromMenu(int menuId);
     }
 }

@@ -23,9 +23,7 @@ namespace BLL.Implementation.Mappers
             {
                 Id = dishOrder.Id,
                 CookingTime = dishOrder.CookingTime,
-                //CookDto = dishOrder.Cook.ToDto(),
-                //OrderDto = dishOrder.Order.ToDto(),
-               // DishDTO = dishOrder.Dish.ToDto()
+                
             };
         }
     }
