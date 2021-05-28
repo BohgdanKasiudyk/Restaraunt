@@ -26,7 +26,7 @@
             </ListView.View>
         </ListView>
         
-        <ListView Grid.Row="0" Grid.Column="1" Grid.RowSpan="1" ItemsSource="{Binding Path=Dishes}"
+        <ListView Grid.Row="0" Grid.Column="1"  ItemsSource="{Binding Path=Dishes}"
                   SelectedItem="{Binding Path=SelectDish}" ScrollViewer.CanContentScroll="False">
             <ListView.View>
                 <GridView>
